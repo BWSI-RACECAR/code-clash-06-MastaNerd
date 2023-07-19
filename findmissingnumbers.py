@@ -48,17 +48,16 @@ class Solution:
             #return type: list of int
             
             #TODO: Write code below to return an int list with the solution to the prompt.
-        sortedNumbers = numbers.sort()
-        counter = 0
+        numbers.sort()
         missingNumbers = []
-        for i in range(0,len(sortedNumbers)):
+        for i in range(0, len(numbers)):
             if i == 0: 
                 continue
-            if sortedNumbers[i] == sortedNumbers[i-1]:
+            if numbers[i] == numbers[i-1]:
                 continue
-            elif sortedNumbers[i] == sortedNumbers[i-1]:
+            elif numbers[i] == numbers[i-1]:
                 continue
-            for i in range(sortedNumbers[i-1] + 1,sortedNumbers[i]):
+            for i in range(numbers[i-1] + 1,numbers[i]):
                 missingNumbers.append(i)
         return missingNumbers
 def main():
