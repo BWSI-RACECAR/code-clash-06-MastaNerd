@@ -61,7 +61,10 @@ class Solution:
                 continue
             for j in range(int(round(numbers[i-1] + 1)),int(round(numbers[i]))):
                 missingNumbers.append(j)
-        return missingNumbers
+        if missingNumbers:
+            return missingNumbers
+        else:
+            return "None missing"
 def main():
     array = input().split(" ")
     for x in range (0, len(array)):
