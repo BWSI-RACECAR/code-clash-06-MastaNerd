@@ -43,7 +43,7 @@ Input: [3, 3, 3, 3, 4, 7] Output: [5, 6]
 
 """
 class Solution:
-    def findMissingNumbers(numbers):
+    def findMissingNumbers(self, numbers):
             #type numbers: list of float
             #return type: list of int
             
