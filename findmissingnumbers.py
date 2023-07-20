@@ -43,7 +43,12 @@ Input: [3, 3, 3, 3, 4, 7] Output: [5, 6]
 
 """
 class Solution:
-    numbers.sort()
+    def findMissingNumbers(numbers):
+            #type numbers: list of float
+            #return type: list of int
+            
+            #TODO: Write code below to return an int list with the solution to the prompt.
+        numbers.sort()
         for i in numbers:
             i = round(i)
         missingNumbers = []
